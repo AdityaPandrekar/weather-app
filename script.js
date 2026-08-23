@@ -24,21 +24,21 @@ async function checkWeather(city) {
       Math.round(data.main.humidity) + "%&nbsp;";
 
     if (data.weather[0].main == "Clouds") {
-      imageSection.src = "/weather-app-img/images/clouds.png";
+      imageSection.src = "images/clouds.png";
     } else if (data.weather[0].main == "Clear") {
-      imageSection.src = "/weather-app-img/images/clear.png";
+      imageSection.src = "images/clear.png";
     } else if (data.weather[0].main == "Drizzle") {
-      imageSection.src = "/weather-app-img/images/drizzle.png";
+      imageSection.src = "images/drizzle.png";
     } else if (data.weather[0].main == "Humidity") {
-      imageSection.src = "/weather-app-img/images/humidity.png";
+      imageSection.src = "images/humidity.png";
     } else if (data.weather[0].main == "Mist") {
-      imageSection.src = "/weather-app-img/images/mist.png";
+      imageSection.src = "images/mist.png";
     } else if (data.weather[0].main == "Rain") {
-      imageSection.src = "/weather-app-img/images/rain.png";
+      imageSection.src = "images/rain.png";
     } else if (data.weather[0].main == "Snow") {
-      imageSection.src = "/weather-app-img/images/snow.png";
+      imageSection.src = "images/snow.png";
     } else if (data.weather[0].main == "Wind") {
-      imageSection.src = "/weather-app-img/images/wind.png";
+      imageSection.src = "images/wind.png";
     }
 
     document.querySelector(".weather").style.display = "block";
